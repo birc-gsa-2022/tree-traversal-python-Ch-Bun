@@ -33,10 +33,11 @@ def bf_order(t: T | None) -> Iterable[int]:
 
 
     return result
-
+'''
 def main():
     tree = T(2, T(1, None, None), T(4, T(3, None, None), T(5, None, None))) 
     print(list(bf_order(tree)))
 
 if __name__ == '__main__':
     main()
+'''
