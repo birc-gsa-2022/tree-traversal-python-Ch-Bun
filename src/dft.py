@@ -3,12 +3,13 @@
 from typing import Iterable
 from tree import T
 
+# alternative solution
 def rekursiv_in_order(t: T | None, result: list[int]):
     if t != None:
         rekursiv_in_order(t.left, result)
         result.append(t.val)
         rekursiv_in_order(t.right, result)
-
+#solution
 def in_order(t: T | None) -> Iterable[int]:
     """In-order traversal of a tree.
 
